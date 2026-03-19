@@ -1,0 +1,8 @@
+{
+  "build": {
+    "builder": "nixpacks"
+  },
+  "deploy": {
+    "startCommand": "cd backend && daphne -b 0.0.0.0 -p $PORT attendance.asgi:application"
+  }
+}
